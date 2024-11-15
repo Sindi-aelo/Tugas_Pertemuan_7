@@ -1,38 +1,229 @@
-.App {
-  text-align: center;
+/* General body styling - already applied globally */
+body {
+  background-color: #d2d2d2;
+  font-family: 'Poppins', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  font-size: 18px; /* Ukuran font default yang lebih kecil */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Header container styling - already applied globally */
+.header-container {
+  width: 85%; /* Kurangi lebar container menjadi 85% */
+  max-width: 1000px; /* Kurangi maksimal lebar container */
+  margin: 0 auto; /* Tetap pusatkan elemen di tengah */
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Container untuk mengatur posisi search bar di tengah */
+.search-bar-container {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+/* Styling untuk search bar */
+.form-control {
+  width: 100%;
+  max-width: 800px; /* Atur panjang maksimal */
+  border-radius: 30px;
+  padding: 10px 20px;
+  border: 1px solid #ced4da;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+/* Fokus pada search bar */
+.form-control:focus {
+  border-color: #6f42c1;
+  box-shadow: 0 0 5px rgba(111, 66, 193, 0.5);
+  outline: none;
+}
+
+/* Task card styling */
+.task-card {
+  width: 70%; /* Ubah menjadi 70% untuk ukuran lebih kecil */
+  max-width: 800px; /* Kurangi maksimal lebar menjadi 600px */
+  margin: 10px auto; /* Pusatkan elemen di tengah */
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 12px 10px;
+  transition: box-shadow 0.2s ease;
+}
+
+.task-card:hover {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Kurangi shadow saat hover */
+}
+
+.task-card h5 {
+  font-weight: bold;
+  font-size: 1.1rem; /* Ukuran font yang lebih kecil */
+}
+
+.task-card .d-flex {
+  display: flex;
+  align-items: center; /* Mengatur agar elemen di tengah secara vertikal */
+  justify-content: space-between; /* Memberi jarak antara elemen */
+}
+
+/* Circle status indicator styling */
+.circle-indicator {
+  width: 12px; /* Kurangi ukuran lingkaran */
+  height: 12px; /* Kurangi ukuran lingkaran */
+  border-radius: 50%;
+  margin-right: 10px; /* Kurangi margin antar elemen */
+}
+
+.circle-indicator.to-do {
+  background-color: #6c757d;
+}
+
+.circle-indicator.in-progress {
+  background-color: #ffb74d;
+}
+
+.circle-indicator.done {
+  background-color: #4caf50;
+}
+
+.progress-circle-container {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-right: 0.8rem; /* Kurangi margin */
+  min-width: 40px;
+}
+
+/* Button styling - rounded and bold */
+button {
+  border-radius: 15px !important; /* Kurangi border radius */
+  font-weight: bold;
+  padding: 6px 12px; /* Kurangi padding dalam tombol */
+  font-size: 0.9rem; /* Kurangi ukuran font */
+}
+
+/* Primary button styling */
+.btn-primary {
+  background-color: #6c63ff;
+  border-color: #6c63ff;
+}
+
+.btn-primary:hover {
+  background-color: #574bff;
+  border-color: #574bff;
+}
+
+/* Status badges */
+.bg-danger {
+  background-color: #ff6b6b !important;
+}
+
+.bg-warning {
+  background-color: #ffb74d !important;
+  color: #333;
+}
+
+.bg-success {
+  background-color: #4caf50 !important;
+}
+
+.bg-secondary {
+  background-color: #e0e0e0 !important;
+  color: #333;
+}
+
+/* Icon button styling */
+button i {
+  font-size: 1.1rem; /* Kurangi ukuran font icon */
+  transition: opacity 0.3s ease;
+}
+
+button i:hover {
+  opacity: 0.8;
+}
+
+/* Progress circle styles */
+svg circle {
+  transition: stroke-dashoffset 0.4s ease;
+}
+
+svg circle:first-child {
+  stroke: #e9ecef; /* Background circle */
+}
+
+svg circle:last-child {
+  stroke-linecap: round;
+}
+
+/* Modal Header Styling */
+.modal-header {
+  background-color: #6c63ff;
   color: white;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
 
-.App-link {
-  color: #61dafb;
+.modal-header .close {
+  color: white;
+  opacity: 0.9;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.modal-header .close:hover {
+  opacity: 1;
+}
+
+/* Modal Body Styling */
+.modal-body {
+  padding: 1rem; /* Kurangi padding di dalam modal */
+  background-color: #f9fafb;
+}
+
+/* Form Label Styling */
+.modal-body .form-label {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem; /* Kurangi ukuran font label */
+}
+
+/* Form Control Styling */
+.modal-body .form-control {
+  padding: 0.4rem 0.8rem; /* Kurangi padding di dalam form */
+  border-radius: 6px; /* Kurangi border radius */
+  border: 1px solid #ddd;
+  transition: border-color 0.3s ease;
+}
+
+.modal-body .form-control:focus {
+  border-color: #6c63ff;
+  box-shadow: 0px 0px 8px rgba(108, 99, 255, 0.3);
+}
+
+/* Footer Button Styling */
+.modal-footer {
+  background-color: #f9fafb;
+  padding: 1rem 1.5rem;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.modal-footer .btn-primary {
+  background-color: #6c63ff;
+  border-color: #6c63ff;
+  padding: 0.5rem 1.5rem;
+}
+
+.modal-footer .btn-primary:hover {
+  background-color: #574bff;
+}
+
+.modal-footer .btn-secondary {
+  background-color: #b0b0b0;
+  color: #fff;
+}
+
+.modal-footer .btn-secondary:hover {
+  background-color: #9a9a9a;
 }

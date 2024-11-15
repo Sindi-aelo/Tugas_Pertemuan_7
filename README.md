@@ -68,3 +68,12 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+![alt text](https://github.com/Sindi-aelo/Tugas_Pertemuan_7/blob/master/public/pic1.png?raw=true)
+![alt text](https://github.com/Sindi-aelo/Tugas_Pertemuan_7/blob/master/public/pic2.png?raw=true)
+![alt text](https://github.com/Sindi-aelo/Tugas_Pertemuan_7/blob/master/public/pic3.png?raw=true)
+![alt text](https://github.com/Sindi-aelo/Tugas_Pertemuan_7/blob/master/public/pic4.png?raw=true)
+![alt text](https://github.com/Sindi-aelo/Tugas_Pertemuan_7/blob/master/public/pic5.png?raw=true)
+![alt text](https://github.com/Sindi-aelo/Tugas_Pertemuan_7/blob/master/public/pic6.png?raw=true)
+![alt text](https://github.com/Sindi-aelo/Tugas_Pertemuan_7/blob/master/public/pic7.png?raw=true)
+![alt text](https://github.com/Sindi-aelo/Tugas_Pertemuan_7/blob/master/public/pic8.png?raw=true)
